@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NovaReads</title>
+    <link rel="stylesheet" href="styles/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="position: relative; background-color: #f3f0f0 !important">
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#FF9800"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Random Backgrounds</h4>
+          <div class="random-backgrounds">
+            <span class="yes active" data-background="yes">Yes</span>
+            <span class="no" data-background="no">No</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <h4>Show Bullets</h4>
+          <div class="bullets-option">
+            <span class="yes active" data-display="show">Yes</span>
+            <span class="no" data-display="hide">No</span>
+          </div>
+        </div>
+        <button class="reset-options">Reset Options</button>
+      </div>
+    </div>
+    <!-- End Settings Box -->
+
+    <!-- Start Nav Bullets -->
+    <div class="nav-bullets">
+      <div class="bullet" data-section=".about-us">
+        <div class="tooltip">About Us</div>
+      </div>
+      <div class="bullet" data-section=".skills">
+        <div class="tooltip">Our Skills</div>
+      </div>
+      <div class="bullet" data-section=".gallery">
+        <div class="tooltip">Our Gallery</div>
+      </div>
+      <div class="bullet" data-section=".timeline">
+        <div class="tooltip">Timeline</div>
+      </div>
+      <div class="bullet" data-section=".features">
+        <div class="tooltip">Features</div>
+      </div>
+      <div class="bullet" data-section=".testimonials">
+        <div class="tooltip">Testimonials</div>
+      </div>
+    </div>
+    <!-- End Nav Bullets -->
+
+    <!-- Start Landing Page -->
+    <div class="landing-page">
+      <div class="overlay"></div>
+      <div class="position-absolute w-100">
+        <div class="container">
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand flex items-center gap-3" href="/">
+                <img
+                  src="./imgs/logo_third.jpg"
+                  width="50"
+                  height="50"
+                  class="d-inline-block align-text-top rounded-full"
+                />
+                <span class="logo-text">NovaReads</span>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/articles.html"> Articles </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact.html"> Contact Us </a>
+                  </li>
+                </ul>
+                <form
+                  class="d-flex"
+                  role="search"
+                  style="color: white !important"
+                >
+                  <input
+                    class="form-control me-2 bg-transparent"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    style="color: white !important"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="introduction-text">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          odit nihil ullam nesciunt quidem iste
+        </p>
+      </div>
+    </div>
+    <!-- Start Most Read Articles -->
+    <div class="most-read container">
+      <div class="most-read-head">
+        <h2>Most Read Articles</h2>
+        <p>
+          Experience the thrill of discovering off-the-beaten-path gems and
+          famous landmarks in top destinations worldwide - your wanderlust
+          awaits!
+        </p>
+      </div>
+    </div>
+    <!-- End Most Read Articles-->
+
+    <!-- Start Features -->
+    <div class="features">
+      <h2>Our Features</h2>
+      <div class="container">
+        <div class="feat-box">
+          <img src="imgs/programming.svg" alt="" />
+          <h4>Development</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/advertising.svg" alt="" />
+          <h4>Marketing</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/hosting-icon.svg" alt="" />
+          <h4>Hosting</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/mobile-app.svg" alt="" />
+          <h4>Mobile Develope</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/graphic-design.svg" alt="" />
+          <h4>Cloud and Servers</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/web-design.svg" alt="" />
+          <h4>Seo</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Start Testimonials -->
+    <div class="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="ts-box">
+          <p>
+            Iam very happy with the product its amazing and i recieve it very
+            fast and the price was amazing.
+          </p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/DDD" alt="" />
+            <h4>Ahmed Mosaad</h4>
+            <p>CEO At Company</p>
+          </div>
+        </div>
+        <div class="ts-box">
+          <p>
+            Iam very happy with the product its amazing and i recieve it very
+            fast and the price was amazing.
+          </p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/EEE" alt="" />
+            <h4>Mohamed Ibrahim</h4>
+            <p>CEO At Company</p>
+          </div>
+        </div>
+        <div class="ts-box">
+          <p>
+            Iam very happy with the product its amazing and i recieve it very
+            fast and the price was amazing.
+          </p>
+          <div class="person-info">
+            <img src="https://placehold.it/80/AAA" alt="" />
+            <h4>Sherief Ashraf</h4>
+            <p>CEO At Company</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Start Contact Us -->
+    <div class="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="">
+          <div class="left">
+            <input type="text" placeholder="Your Name" name="username" />
+            <input type="text" placeholder="Your Phone" name="phone" />
+            <input type="email" placeholder="Your Email" name="email" />
+            <input type="text" placeholder="Subject" name="subject" />
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Start Footer -->
+    <div class="footer">Created With Love By Osama Elzero</div>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
