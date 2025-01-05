@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NovaReads</title>
+    <base href="/bwp-homework" />
     <link rel="stylesheet" href="../styles/font-awesome.min.css" />
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="../styles/style.css" />
@@ -193,8 +194,113 @@
         </div>
       </div>
     </div>
+    <!-- Start Most Read Articles -->
+    <div class="most-read container" style="padding-bottom: 50px">
+      <div class="most-read-head">
+        <h2>Related Articles</h2>
+        <p>
+          Dive into our top-picked stories and explore the insights that
+          captivate readers around the globe. Stay informed, inspired, and ahead
+          of the curve.
+        </p>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper swiper-most-reading">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('./img/activity_9.jpg');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/9.html'"
+          >
+            <div class="article-card-title">The Heart of ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('./img/activity_10.jpg');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/10.html'"
+          >
+            <div class="article-card-title">History Preserved ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('./img/activity_11.jpg');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/11.html'"
+          >
+            <div class="article-card-title">Family Fun ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('./img/activity_12.png');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/12.html'"
+          >
+            <div class="article-card-title">Adrenaline Rush ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('./img/activity_14.jpg');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/14.html'"
+          >
+            <div class="article-card-title">Automotive Marvel ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('./img/activity_15.jpg');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/15.html'"
+          >
+            <div class="article-card-title">Sky High ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('./img/activity_16.png');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/16.html'"
+          >
+            <div class="article-card-title">Adrenaline Rush ...</div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="carousel-controls">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Most Read Articles-->
+
+    <!-- Start Footer -->
+    <div class="footer">Created With Love By Abdullah Al Zahabi</div>
+    <!-- End Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/swiper.js"></script>
   </body>
 </html>

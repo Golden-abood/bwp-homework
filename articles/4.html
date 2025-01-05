@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NovaReads</title>
+    <base href="/bwp-homework" />
     <link rel="stylesheet" href="../styles/font-awesome.min.css" />
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="../styles/style.css" />
@@ -206,8 +207,97 @@
         </div>
       </div>
     </div>
+    <div class="most-read container" style="padding-top: 50px">
+      <div class="most-read-head">
+        <h2>Related Articles</h2>
+        <p>
+          Dive into our top-picked stories and explore the insights that
+          captivate readers around the globe. Stay informed, inspired, and ahead
+          of the curve.
+        </p>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper swiper-most-reading" style="padding-bottom: 50px">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('../img/activity_1.jpg');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/1.html'"
+          >
+            <div class="article-card-title">The Grandeur of ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('../img/activity_3.jpg');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/3.html'"
+          >
+            <div class="article-card-title">Luxury Afloat: ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('../img/activity_5.png');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/5.html'"
+          >
+            <div class="article-card-title">A Day at the ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('../img/activity_6.png');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/6.html'"
+          >
+            <div class="article-card-title">Chasing Snow in ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('../img/activity_7.jpg');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/7.html'"
+          >
+            <div class="article-card-title">A Day at Al ...</div>
+          </div>
+          <div
+            class="swiper-slide article-card"
+            style="
+              background-image: url('../img/activity_8.jpg');
+              width: 300px;
+              height: 300px;
+            "
+            onclick="location.href='./articles/8.html'"
+          >
+            <div class="article-card-title">History Preserved: ...</div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="carousel-controls">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Created With Love By Abdullah Al Zahabi</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/swiper.js"></script>
   </body>
 </html>
