@@ -52,29 +52,6 @@
     </div>
     <!-- End Settings Box -->
 
-    <!-- Start Nav Bullets -->
-    <div class="nav-bullets">
-      <div class="bullet" data-section=".about-us">
-        <div class="tooltip">About Us</div>
-      </div>
-      <div class="bullet" data-section=".skills">
-        <div class="tooltip">Our Skills</div>
-      </div>
-      <div class="bullet" data-section=".gallery">
-        <div class="tooltip">Our Gallery</div>
-      </div>
-      <div class="bullet" data-section=".timeline">
-        <div class="tooltip">Timeline</div>
-      </div>
-      <div class="bullet" data-section=".features">
-        <div class="tooltip">Features</div>
-      </div>
-      <div class="bullet" data-section=".testimonials">
-        <div class="tooltip">Testimonials</div>
-      </div>
-    </div>
-    <!-- End Nav Bullets -->
-
     <!-- Start Landing Page -->
     <div class="landing-page">
       <div class="overlay"></div>
@@ -131,7 +108,15 @@
                     aria-label="Search"
                     style="color: white !important"
                   />
-                  <button class="btn btn-outline-success" type="submit">
+                  <button
+                    class="btn search-btn"
+                    type="submit"
+                    style="
+                      border-color: var(--main-color);
+                      border-width: 2;
+                      color: var(--main-color);
+                    "
+                  >
                     Search
                   </button>
                 </form>
@@ -142,15 +127,35 @@
       </div>
 
       <div class="introduction-text">
-        <h1>We Are <span>Creative</span> Agency</h1>
+        <h1>We’d <span>Love to Hear </span> From You!</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          odit nihil ullam nesciunt quidem iste
+          Have questions, feedback, or just want to say hello? Reach out to us,
+          and we’ll get back to you as soon as possible.
         </p>
       </div>
     </div>
+    <!-- Start Contact Us -->
+    <div class="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="">
+          <div class="left">
+            <input type="text" placeholder="Your Name" name="username" />
+            <input type="text" placeholder="Your Phone" name="phone" />
+            <input type="email" placeholder="Your Email" name="email" />
+            <input type="text" placeholder="Subject" name="subject" />
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Us -->
     <!-- Start Footer -->
-    <div class="footer">Created With Love By Osama Elzero</div>
+    <div class="footer">Created With Love By Abdullah Al Zahabi</div>
     <!-- End Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>

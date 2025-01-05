@@ -15,6 +15,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body style="position: relative">
     <!-- Start Settings Box -->
@@ -51,29 +55,6 @@
       </div>
     </div>
     <!-- End Settings Box -->
-
-    <!-- Start Nav Bullets -->
-    <div class="nav-bullets">
-      <div class="bullet" data-section=".about-us">
-        <div class="tooltip">About Us</div>
-      </div>
-      <div class="bullet" data-section=".skills">
-        <div class="tooltip">Our Skills</div>
-      </div>
-      <div class="bullet" data-section=".gallery">
-        <div class="tooltip">Our Gallery</div>
-      </div>
-      <div class="bullet" data-section=".timeline">
-        <div class="tooltip">Timeline</div>
-      </div>
-      <div class="bullet" data-section=".features">
-        <div class="tooltip">Features</div>
-      </div>
-      <div class="bullet" data-section=".testimonials">
-        <div class="tooltip">Testimonials</div>
-      </div>
-    </div>
-    <!-- End Nav Bullets -->
 
     <!-- Start Landing Page -->
     <div class="landing-page">
@@ -131,7 +112,15 @@
                     aria-label="Search"
                     style="color: white !important"
                   />
-                  <button class="btn btn-outline-success" type="submit">
+                  <button
+                    class="btn search-btn"
+                    type="submit"
+                    style="
+                      border-color: var(--main-color);
+                      border-width: 2;
+                      color: var(--main-color);
+                    "
+                  >
                     Search
                   </button>
                 </form>
@@ -142,15 +131,578 @@
       </div>
 
       <div class="introduction-text">
-        <h1>We Are <span>Creative</span> Agency</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          odit nihil ullam nesciunt quidem iste
+        <h1>Explore the <span>World</span> of Knowledge</h1>
+        <p class="text-content">
+          Dive into a curated collection of insightful articles, expert
+          opinions, and trending topics. Whether you're seeking inspiration,
+          staying informed, or exploring new ideas, our articles are tailored to
+          satisfy your curiosity and ignite your passion for learning.
         </p>
       </div>
     </div>
+    <!-- End Landing Page -->
+
+    <!-- Start Types Of Articles -->
+    <div class="types-of-articles container" style="padding-bottom: 50px">
+      <div class="most-read-head">
+        <h2>Types Of Articles</h2>
+        <p>
+          Dive into our top-picked stories and explore the insights that
+          captivate readers around the globe. Stay informed, inspired, and ahead
+          of the curve.
+        </p>
+      </div>
+
+      <div class="d-flex justify-content-around items-center flex-wrap gap-2">
+        <div>
+          <img src="/img/01.jpg" class="rounded-3" style="width: 300px" />
+        </div>
+        <div>
+          <img src="/img/02.jpg" class="rounded-3" style="width: 300px" />
+        </div>
+        <div>
+          <img src="/img/03.jpg" class="rounded-3" style="width: 300px" />
+        </div>
+        <div>
+          <img src="/img/04.jpg" class="rounded-3" style="width: 300px" />
+        </div>
+      </div>
+    </div>
+    <!-- End Types Of Articles -->
+    <!-- Most Popular Experiences Section -->
+    <div class="popular-experiences">
+      <!-- Head Section -->
+      <div class="head-section">
+        <h2 class="title">All Articles</h2>
+        <p class="description">
+          Culture, nature, thrills, and record-breaking experiences—Dubai is the
+          place to seek out everything you imagine and beyond. Find it all here!
+        </p>
+      </div>
+
+      <!-- Swiper Carousel -->
+      <div class="articles-container container">
+        <!-- Swiper Slide -->
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/1.html'">
+            <div class="card-header">
+              <img
+                src="./img/activity_1.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                The Grandeur of Sheikh Zayed Grand Mosque
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Dive into the architectural brilliance and spiritual serenity of
+                the Sheikh Zayed Grand Mosque, a must-visit landmark symbolizing
+                the rich cultural heritage of the UAE.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/2.html'">
+            <div class="card-header">
+              <img
+                src="./img/activity_2.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                Ferrari World: A Tribute to Speed and Innovation
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Experience the excitement of Ferrari World, home to the world's
+                fastest roller coaster and a celebration of the legendary
+                Ferrari brand's innovation and speed.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/3.html';">
+            <div class="card-header">
+              <img
+                src="./img/activity_3.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                Luxury Afloat: Dubai's Scenic Boat Tours
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Set sail on Dubai's shimmering waters with luxurious boat tours,
+                offering picturesque views, world-class services, and an
+                unforgettable maritime experience.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/4.html';">
+            <div class="card-header">
+              <img
+                src="./img/activity_4.png"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                The Majestic Bridge Over Water: An Architectural Marvel
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Spanning across glittering waters, the iconic bridge stands as a
+                testament to modern engineering and architectural brilliance. A
+                seamless blend of function and beauty, this bridge not only
+                connects two destinations but also serves as a symbol of
+                innovation and progress.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/5.html'">
+            <div class="card-header">
+              <img
+                src="./img/activity_5.png"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                A Day at the Racetrack: Experience the Thrill of Speed
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Step into the exhilarating world of motorsports with a day at
+                Dubai Autodrome or Yas Marina Circuit, two of the UAE's most
+                iconic racetracks. Whether you're a racing enthusiast or just
+                seeking a rush of adrenaline, this experience is designed to
+                captivate and excite.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/6.html'">
+            <div class="card-header">
+              <img
+                src="./img/activity_6.png"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                Chasing Snow in the Desert: Ski Dubai Adventures
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Escape the heat and embrace the chill at Ski Dubai, the indoor
+                snow park that promises skiing, snowboarding, and snow-filled
+                fun for all ages.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/7.html'">
+            <div class="card-header">
+              <img
+                src="./img/activity_7.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                A Day at Al Ain Zoo: Wildlife Encounters
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Discover the wonders of the animal kingdom at Al Ain Zoo, where
+                family-friendly attractions bring you closer to wildlife from
+                around the globe.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/8.html'">
+            <div class="card-header">
+              <img
+                src="./img/activity_8.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                History Preserved: Dubai’s Fascinating Museums
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Step back in time and uncover Dubai's rich history at its
+                world-class museums, showcasing artifacts, stories, and
+                traditions that shaped the UAE.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/9.html'">
+            <div class="card-header">
+              <img
+                src="./img/activity_9.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                The Heart of Industry: Inside Dubai's State-of-the-Art Factories
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Take a closer look at Dubai's innovative factories, where
+                advanced technologies and ambitious visions drive the region's
+                industrial success.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/10.html';">
+            <div class="card-header">
+              <img
+                src="./img/activity_10.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                History Preserved: Dubai’s Fascinating Museums
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Step back in time and uncover Dubai's rich history at its
+                world-class museums, showcasing artifacts, stories, and
+                traditions that shaped the UAE.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/11.html';">
+            <div class="card-header">
+              <img
+                src="./img/activity_11.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                Family Fun: Exploring Dubai’s Best Attractions Together
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Create lasting memories with your family as you explore Dubai's
+                top attractions, designed to entertain, educate, and inspire all
+                ages.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/12.html';">
+            <div class="card-header">
+              <img
+                src="./img/activity_12.png"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                Adrenaline Rush: Desert Dune Bashing Adventures
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Explore the thrill of desert dune bashing, where powerful 4x4
+                vehicles navigate the golden sands, offering an unforgettable
+                adventure in the heart of the UAE desert.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/13.html';">
+            <div class="card-header">
+              <img
+                src="./img/activity_13.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                Culinary Bliss: Dining at Dubai’s Finest Restaurants
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Savor exquisite cuisine and unparalleled hospitality at one of
+                Dubai's renowned restaurants, blending global flavors with
+                Emirati elegance.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/14.html';">
+            <div class="card-header">
+              <img
+                src="./img/activity_14.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                Automotive Marvel: The Iconic Bugatti Chiron
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Admire the engineering masterpiece that is the Bugatti Chiron,
+                combining breathtaking speed, luxury, and cutting-edge design.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/15.html';">
+            <div class="card-header">
+              <img
+                src="./img/activity_15.jpg"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                Sky High Adventures: Tandem Skydiving Thrills
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Experience the ultimate adrenaline rush with tandem skydiving,
+                offering breathtaking views and a once-in-a-lifetime adventure.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <div class="card" onclick="location.href='./articles/16.html'">
+            <div class="card-header">
+              <img
+                src="./img/activity_16.png"
+                alt="Card Image"
+                class="card-image"
+              />
+              <h3 class="card-title">
+                Adrenaline Rush: Desert Dune Bashing Adventures
+              </h3>
+            </div>
+            <div class="card-content" style="flex-direction: column">
+              <p class="text-content">
+                Explore the thrill of desert dune bashing, where powerful 4x4
+                vehicles navigate the golden sands, offering an unforgettable
+                adventure in the heart of the UAE desert.
+              </p>
+              <button
+                class="btn search-btn"
+                type="submit"
+                style="
+                  border-color: var(--main-color);
+                  border-width: 2;
+                  color: var(--main-color);
+                "
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Start Footer -->
-    <div class="footer">Created With Love By Osama Elzero</div>
+    <div class="footer">Created With Love By Abdullah Al Zahabi</div>
     <!-- End Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>

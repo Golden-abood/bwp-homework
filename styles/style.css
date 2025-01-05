@@ -881,12 +881,419 @@ body {
   color: #8c8c8c;
 }
 
-for i from 0 to n-1:
-    for j from 0 to n-1:
-        if i <= j:
-            sum = 0
-            for k from i to j:
-                sum = sum + A[k]
-            M[i][j] = sum / (j - i + 1)
-        else:
-            M[i][j] = 0
+.search-btn:hover {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+
+/* Carousel Container */
+.swiper-most-reading {
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Slide Styles */
+.article-card {
+  position: relative;
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover .article-card-title {
+  transform: scale(1.2);
+  bottom: 40px;
+  left: 40px;
+}
+
+.article-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(161, 138, 138, 0) 70.69%,
+    rgba(36, 20, 20, 0.45) 78.87%,
+    #160a0a 100%
+  );
+  border-radius: 10px;
+}
+
+/* Title Styles */
+.article-card-title {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  font-weight: bold;
+  color: white;
+  z-index: 10;
+  transition: transform 0.6s ease, bottom 0.6s ease, left 0.6s ease;
+}
+
+/* Controls */
+.carousel-controls {
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--main-color) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: white;
+}
+
+/* Responsive Styles */
+@media (min-width: 640px) {
+  .swiper-slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-slide {
+    flex: 0 0 25%;
+  }
+}
+
+/* General Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About Us Header */
+.about-us-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.description p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Cards Section */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-content: center;
+}
+
+.card {
+  border: 1px solid #f1d2d2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  width: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.read-more-button {
+  margin-top: 15px;
+  background-color: transparent;
+  color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Leadership Team Section */
+.leadership-team {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grid Layout for Team */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Team Card */
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-bio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--main-color);
+}
+
+.team-name {
+  font-size: 1rem;
+  color: #555;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+/* General Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header */
+.card-header {
+  padding: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card-title {
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* Card Content */
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.reviews-count {
+  font-size: 0.75rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* Price Section */
+.price {
+  text-align: center;
+}
+
+.previous-price {
+  font-size: 0.75rem;
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.current-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* General Section Styling */
+.popular-experiences {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.head-section .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.head-section .description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Swiper Styles */
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-content: center;
+}
+
+.card-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+.text-content {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.article-back {
+  position: relative;
+}
+.article-back::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333 !important;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.4;
+  z-index: 2;
+}

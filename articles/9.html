@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NovaReads</title>
+    <link rel="stylesheet" href="../styles/font-awesome.min.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      rel="stylesheet"
+      v
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#FF9800"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Random Backgrounds</h4>
+          <div class="random-backgrounds">
+            <span class="yes active" data-background="yes">Yes</span>
+            <span class="no" data-background="no">No</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <h4>Show Bullets</h4>
+          <div class="bullets-option">
+            <span class="yes active" data-display="show">Yes</span>
+            <span class="no" data-display="hide">No</span>
+          </div>
+        </div>
+        <button class="reset-options">Reset Options</button>
+      </div>
+    </div>
+    <!-- End Settings Box -->
+
+    <!-- Start Landing Page -->
+    <div
+      style="
+        background-image: url('../img/activity_9.jpg');
+        height: 100vh;
+        background-repeat: no-repeat;
+        width: 100% !important;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+      "
+      class="article-back"
+    >
+      <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg" style="z-index: 5">
+          <div class="container-fluid">
+            <a class="navbar-brand flex items-center gap-3" href="/">
+              <img
+                src="../imgs/logo_third.jpg"
+                width="50"
+                height="50"
+                class="d-inline-block align-text-top rounded-full"
+              />
+              <span class="logo-text">NovaReads</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/articles.html"> Articles </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html"> Contact Us </a>
+                </li>
+              </ul>
+              <form
+                class="d-flex"
+                role="search"
+                style="color: white !important"
+              >
+                <input
+                  class="form-control me-2 bg-transparent"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  style="color: white !important"
+                />
+                <button
+                  class="btn search-btn"
+                  type="submit"
+                  style="
+                    border-color: var(--main-color);
+                    border-width: 2;
+                    color: var(--main-color);
+                  "
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="introduction-text" style="z-index: 5">
+        <h1>
+          The Heart of Industry: Inside Dubai's State-of-the-Art Factories
+        </h1>
+        <p class="text-content">
+          Take a closer look at Dubai's innovative factories, where advanced
+          technologies and ambitious visions drive the region's industrial
+          success.
+        </p>
+      </div>
+    </div>
+    <div class="card-article" style="padding: 40px 0">
+      <div class="card" onclick="location.href='./articles/1.html'">
+        <div class="card-header">
+          <h3 class="card-title">
+            The Heart of Industry: Inside Dubai's State-of-the-Art Factories
+          </h3>
+        </div>
+        <div class="card-content" style="flex-direction: column">
+          <div style="text-align: left">
+            <h4>Introduction:</h4>
+            <p>
+              Escape the hustle and bustle of city life and embark on a
+              luxurious boat cruise along the UAE’s stunning coastline. Whether
+              it’s a romantic getaway or a fun-filled day with family, a cruise
+              offers the perfect blend of relaxation and adventure.
+            </p>
+            <h4>A View Like No Other:</h4>
+            <p>
+              Sail past iconic landmarks like the Burj Al Arab, Palm Jumeirah,
+              and the Dubai Marina skyline. The panoramic views of the sea and
+              the city’s glittering skyline create a truly mesmerizing
+              experience.
+            </p>
+            <h4>Unparalleled Luxury:</h4>
+            <p>
+              Indulge in the comforts of a private yacht or join a larger group
+              on a traditional dhow. Enjoy gourmet meals, refreshing drinks, and
+              impeccable service as you relax on deck, soaking up the sun and
+              the sea breeze.
+            </p>
+            <h4>Fun on the Water:</h4>
+            <p>
+              Many cruises offer activities like swimming, snorkeling, and jet
+              skiing. For those looking to unwind, simply lounge on the deck and
+              watch the waves gently lap against the boat.
+            </p>
+            <h4>An Engineering Feat:</h4>
+            <p>
+              A boat cruise is more than just a journey; it’s a chance to
+              reconnect with nature, enjoy luxury, and create unforgettable
+              memories.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
