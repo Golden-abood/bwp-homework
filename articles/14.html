@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NovaReads</title>
     <base href="/bwp-homework/" />
-    <link rel="stylesheet" href="../styles/font-awesome.min.css" />
-    <link rel="stylesheet" href="../styles/normalize.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="styles/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
       v
@@ -72,11 +72,15 @@
       class="article-back"
     >
       <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-lg" style="z-index: 5">
+        <nav class="navbar navbar-dark navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand flex items-center gap-3" href="/">
+            <a
+              class="navbar-brand flex items-center gap-3"
+              style="cursor: pointer"
+              onclick="location.href='/'"
+            >
               <img
-                src="../imgs/logo_third.jpg"
+                src="./imgs/logo_third.jpg"
                 width="50"
                 height="50"
                 class="d-inline-block align-text-top rounded-full"
@@ -97,18 +101,39 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    style="cursor: pointer"
+                    onclick="location.href='/'"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/about.html">About us</a>
+                  <a
+                    class="nav-link"
+                    style="cursor: pointer"
+                    onclick="location.href='about.html'"
+                    >About us</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/articles.html"> Articles </a>
+                  <a
+                    class="nav-link"
+                    style="cursor: pointer"
+                    onclick="location.href='articles.html'"
+                  >
+                    Articles
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/contact.html"> Contact Us </a>
+                  <a
+                    class="nav-link"
+                    style="cursor: pointer"
+                    onclick="location.href='contact.html'"
+                  >
+                    Contact Us
+                  </a>
                 </li>
               </ul>
               <form
